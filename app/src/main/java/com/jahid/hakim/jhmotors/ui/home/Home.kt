@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.jahid.hakim.jhmotors.ui.home
 
 import androidx.lifecycle.ViewModelProviders
@@ -6,7 +8,10 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
+import com.jahid.hakim.jhmotors.R
 import com.jahid.hakim.jhmotors.databinding.HomeFragmentBinding
+import kotlin.system.exitProcess
 
 @Suppress("DEPRECATION")
 class Home : Fragment() {
@@ -23,8 +28,28 @@ class Home : Fragment() {
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
         binding.myRecyclerView.adapter = HomeAdapter()
-        //setHasOptionsMenu(true)
+        setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.item_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.item_exit ->{
+                Toast.makeText(context, "Visit Again", Toast.LENGTH_SHORT).show()
+                exitProcess(0)
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(context, "Visit Again", Toast.LENGTH_SHORT).show()
     }
 
 }
