@@ -1,9 +1,9 @@
-package com.jahid.hakim.jhmotors
+package com.abu.ghalib.abumotors
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.jahid.hakim.jhmotors.databinding.ActivityMainBinding
+import com.abu.ghalib.abumotors.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

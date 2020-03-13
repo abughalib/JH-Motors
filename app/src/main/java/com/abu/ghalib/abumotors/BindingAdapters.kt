@@ -1,4 +1,4 @@
-package com.jahid.hakim.jhmotors
+package com.abu.ghalib.abumotors
 
 import android.view.View
 import android.widget.ImageView
@@ -7,9 +7,9 @@ import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.jahid.hakim.jhmotors.ui.home.HomeAdapter
-import com.jahid.hakim.jhmotors.ui.home.AppApiStatus
-import com.jahid.hakim.jhmotors.ui.network.AppProperty
+import com.abu.ghalib.abumotors.ui.home.HomeAdapter
+import com.abu.ghalib.abumotors.ui.home.AppApiStatus
+import com.abu.ghalib.abumotors.ui.network.AppProperty
 
 @BindingAdapter("imageUrl")
 fun bindImage(imgView: ImageView, imgUrl: String?){

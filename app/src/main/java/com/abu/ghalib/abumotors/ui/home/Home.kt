@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.jahid.hakim.jhmotors.ui.home
+package com.abu.ghalib.abumotors.ui.home
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
-import com.jahid.hakim.jhmotors.R
-import com.jahid.hakim.jhmotors.databinding.HomeFragmentBinding
+import com.abu.ghalib.abumotors.R
+import com.abu.ghalib.abumotors.databinding.HomeFragmentBinding
 import kotlin.system.exitProcess
 
 @Suppress("DEPRECATION")

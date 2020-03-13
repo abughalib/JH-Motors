@@ -1,4 +1,4 @@
-package com.jahid.hakim.jhmotors.ui.network
+package com.abu.ghalib.abumotors.ui.network
 
 import com.squareup.moshi.Json
 

@@ -1,10 +1,10 @@
-package com.jahid.hakim.jhmotors.ui.home
+package com.abu.ghalib.abumotors.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.jahid.hakim.jhmotors.ui.network.AppApi
-import com.jahid.hakim.jhmotors.ui.network.AppProperty
+import com.abu.ghalib.abumotors.ui.network.AppApi
+import com.abu.ghalib.abumotors.ui.network.AppProperty
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -29,6 +29,10 @@ class HomeViewModel : ViewModel() {
 
     init {
         getProperties()
+    }
+
+    private fun onClickImage(){
+
     }
 
     private fun getProperties(){

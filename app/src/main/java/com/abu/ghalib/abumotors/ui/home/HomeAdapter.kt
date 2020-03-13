@@ -1,12 +1,12 @@
-package com.jahid.hakim.jhmotors.ui.home
+package com.abu.ghalib.abumotors.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.jahid.hakim.jhmotors.databinding.ItemViewholderBinding
-import com.jahid.hakim.jhmotors.ui.network.AppProperty
+import com.abu.ghalib.abumotors.databinding.ItemViewholderBinding
+import com.abu.ghalib.abumotors.ui.network.AppProperty
 
 class HomeAdapter: ListAdapter<AppProperty, HomeAdapter.MyViewHolder>(DiffCallback) {
 

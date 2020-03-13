@@ -3,7 +3,7 @@
     <data>
         <variable
             name="property"
-            type="com.jahid.hakim.jhmotors.ui.network.AppProperty" />
+            type="com.abu.ghalib.abumotors.ui.network.AppProperty" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
